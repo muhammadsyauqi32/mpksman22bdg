@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPK SMAN 22 BANDUNG | Aspirasi</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styleabout.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <header>
+        <div id="menu">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </header>
+    </div>
+    <!-- Akhir Navbar -->
+
+    <!-- Isi Navbar -->
+    <div class="menu">
+      <nav id="nav">
+        <ul id="sosmed">
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Youtube</a></li>
+          <li><a href="">Tiktok</a></li>
+        </ul>
+
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="member.html">Anggota</a></li>
+          <li><a href="aspiration.html">Aspiration</a></li>
+        </ul>
+
+        <div class="footer">
+          <p>© 2024 MPK SMAN 22 BANDUNG</p>
+          <p>
+            This website uses cookies to improve your experience. By accessing
+            this website you consent to the use of cookies.
+          </p>
+        </div>
+      </nav>
+    </div>
+    <!-- Akhir isi Navbar -->
+
+    <div class="comingsoon">
+      <h2>COMING SOON!</h2>
+      <p>This page will updated soon!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <a href=""><img src="images/ig.png" alt="" width="40rem" /></a>
+        <a href=""><img src="images/tiktok.png" alt="" width="30rem" /></a>
+      </div>
+      <p>Website by MPK SMAN 22 Bandung</p>
+      <p>Copyright © 2024. MPK SMAN 22 Bandung. All Rights Reserved.</p>
+    </footer>
+    <!-- Akhir Footer -->
+    <!-- Script -->
+    <script>
+      let menu = document.getElementById("menu");
+      let sosmed = document.getElementById("sosmed");
+      let navbar = document.getElementById("navbar");
+      let footer = document.querySelector(".footer");
+      let nav = document.getElementById("nav");
+      menu.onclick = function () {
+        menu.classList.toggle("openmenu");
+        nav.classList.toggle("animasi1");
+      };
+    </script>
+  </body>
+</html>
