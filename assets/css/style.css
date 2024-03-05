@@ -14,13 +14,28 @@ p {
 .hero {
   width: 93%;
   min-height: 90vh;
-  background: url(../..//images/sma22.jpeg);
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../..//images/sma22.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
   margin: 100px auto;
   border-radius: 10px;
   transition: 0.4s;
+}
+
+.textbox {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textbox h2 {
+  font-family: madetommy;
 }
 
 /* AKHIR HERO */
@@ -112,7 +127,6 @@ p {
 
 .aspirasi .gambar {
   margin: 10px;
-  margin-left: 50px;
   background: url(../../images/aspirasi.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -164,5 +178,54 @@ p {
   }
   .tentang h2 {
     text-align: center;
+  }
+  .sambutan .ketua {
+    width: 400px;
+    height: 400px;
+  }
+  .textbox h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .aspirasi .gambar {
+    width: 350px;
+    height: 350px;
+  }
+  .aspirasi .row h3 {
+    font-size: 2.5rem;
+  }
+  .textbox h2 {
+    font-size: 1.8rem;
+  }
+  .textbox p {
+    font-size: 0.7rem;
+  }
+  .hero {
+    min-height: 50vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(../..//images/sma22.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 90px auto 0;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  .row .gambar1 {
+    background: url(../../images/sekbid5.JPG);
+    background-size: cover;
+    background-position: 20% 80%;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .row .gambar-1 {
+    margin: 0 auto;
+    width: 85%;
   }
 }
