@@ -140,7 +140,7 @@ header {
 .line2,
 .line3 {
   background: #fff;
-  width: 30px;
+  width: 40px;
   height: 4px;
   border-radius: 5px;
   display: block;
@@ -179,7 +179,7 @@ footer {
   position: relative;
   width: 100%;
   bottom: 0;
-  background-color: #3b0b1e;
+  background-color: #12372a;
   text-align: center;
   color: #fff;
   padding: 40px 10px;
