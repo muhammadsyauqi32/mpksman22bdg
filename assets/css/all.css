@@ -197,6 +197,21 @@ footer p {
   line-height: 20px;
 }
 
+/* Coming Soon */
+.comingsoon {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.comingsoon h2 {
+  font-size: 6rem;
+  font-family: madetommy;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   header {
@@ -222,5 +237,14 @@ footer p {
   }
   #navbar li a {
     font-size: 2rem;
+  }
+  .comingsoon h2 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .comingsoon h2 {
+    font-size: 3rem;
   }
 }
