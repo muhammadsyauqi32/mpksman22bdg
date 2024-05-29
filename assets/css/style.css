@@ -61,14 +61,13 @@ p {
   flex-wrap: wrap;
 }
 
-.row .gambar1 {
-  background: url(../../images/sekbid5.JPG);
+/* .row .gambar1 {
+  background: url(../../images/about.png);
   background-size: cover;
-  background-position: 20% 80%;
   width: calc(100vw / 1.7);
-  height: 400px;
+  height: 350px;
   border-radius: 20px;
-}
+} */
 
 .row button {
   margin: 10px 0;
@@ -99,7 +98,7 @@ p {
 }
 
 .sambutan .ketua {
-  background: url(../../images/ketua.png);
+  background: url(../../images/ketwa.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 600px;
@@ -180,8 +179,8 @@ p {
     text-align: center;
   }
   .sambutan .ketua {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
   .textbox h2 {
     font-size: 2.3rem;
@@ -193,8 +192,8 @@ p {
     font-size: 2rem;
   }
   .aspirasi .gambar {
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
   }
   .aspirasi .row h3 {
     font-size: 2.5rem;
@@ -216,13 +215,8 @@ p {
     border-radius: 10px;
     transition: 0.4s;
   }
-  .row .gambar1 {
-    background: url(../../images/sekbid5.JPG);
-    background-size: cover;
-    background-position: 20% 80%;
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
+  .row .gambar1 img {
+    background-color: red;
   }
   .row .gambar-1 {
     margin: 0 auto;
