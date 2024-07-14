@@ -215,9 +215,7 @@ p {
     border-radius: 10px;
     transition: 0.4s;
   }
-  .row .gambar1 img {
-    background-color: red;
-  }
+
   .row .gambar-1 {
     margin: 0 auto;
     width: 85%;
