@@ -1,7 +1,15 @@
-.containerisi {
-  width: 100%;
-  margin: auto;
-  padding: 100px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6c4; /* Warna krem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 500px;
 }
 .accordion {
   background-color: #1c2d16;
@@ -9,13 +17,11 @@
   cursor: pointer; /* Biar kelihatan bisa diklik */
   padding: 15px;
   width: 100%;
-  max-width: 800px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
   border-radius: 8px;
-  margin: 10px auto;
 }
 
 .accordion:hover {
@@ -23,8 +29,8 @@
 }
 
 .panel {
-  text-align: center;
   display: none;
+  background-color: white;
   padding: 10px;
   border: 1px solid #ddd;
 }

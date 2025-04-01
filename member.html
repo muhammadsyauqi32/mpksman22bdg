@@ -68,9 +68,51 @@
     </div>
     <!-- Akhir isi Navbar -->
 
-    <div class="comingsoon">
-      <h2>COMING SOON!</h2>
-      <p>This page will updated soon!</p>
+    <div class="containerisi">
+      <div class="accordion">PANCAMITRA</div>
+      <div class="panel">
+        <p>
+          Pancamitra adalah salah satu struktur penting yang bertanggung jawab
+          atas seluruh Komisi maupun Anggota MPK. Pancamitra terdiri atas Ketua,
+          Wakil Ketua 1, dan Wakil Ketua 2, Sekretaris, dan Bendahara.
+        </p>
+        <img src="images/fotoangkatan.png" alt="" />
+      </div>
+
+      <div class="accordion">KOMISI I</div>
+      <div class="panel">
+        <p>
+          Komisi I Legislatif merupakan sebuah komisi yang menjalankan fungsi
+          legislasi atau pembuatan keputusan dan aturan-aturan, serta mengelola
+          dan mengembangkan informasi teknologi di MPK. Sehingga Komisi I
+          memiliki dua Sub-komisi, yaitu Legislatif dan IT
+        </p>
+        <img src="images/fotoangkatan.png" alt="" />
+      </div>
+
+      <div class="accordion">KOMISI II</div>
+      <div class="panel">
+        <p>
+          Komisi II Pengawasan adalah salah satu komisi dalam struktur Majelis
+          Perwakilan Kelas yang bertanggung jawab untuk mengawasi, mengevaluasi,
+          dan menastikan pelaksanaan program-program yang telah direncanakan
+          oleh osis berjalan sesuai dengan aturan dan tujuan yang telah
+          ditetapkan
+        </p>
+        <img src="images/fotoangkatan.png" alt="" />
+      </div>
+
+      <div class="accordion">KOMISI III</div>
+      <div class="panel">
+        <p>
+          Komis III Humas memiliki tanggung jawab untuk melakukan sosialisasi
+          informasi kegiatan MPK, membina persatuan dan kerjasama pengurus serta
+          membantu ketua umum dalam melakukan diplomasi dengan pihak luar.
+          Komisi III MPK memiliki peran penting dalam menyebarkan informasi
+          tentang pengurus MPK
+        </p>
+        <img src="images/fotoangkatan.png" alt="" />
+      </div>
     </div>
 
     <!-- Footer -->
@@ -98,6 +140,28 @@
         menu.classList.toggle("openmenu");
         nav.classList.toggle("animasi1");
       };
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let acc = document.querySelectorAll(".accordion");
+
+        acc.forEach((div) => {
+          div.addEventListener("click", function () {
+            // Tutup semua panel terlebih dahulu
+            document.querySelectorAll(".panel").forEach((panel) => {
+              panel.style.display = "none";
+            });
+
+            // Hapus semua class "active"
+            acc.forEach((item) => item.classList.remove("active"));
+
+            // Buka panel yang diklik
+            this.classList.add("active");
+            let panel = this.nextElementSibling;
+            panel.style.display = "block";
+          });
+        });
+      });
     </script>
   </body>
 </html>
