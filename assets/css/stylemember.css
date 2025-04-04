@@ -1,30 +1,146 @@
+/* Bikin body dan html full tinggi */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to bottom, #f4f7f2, #e8ece3); /* Gradasi soft */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page wrapper flex column */
+
+/* Biar footer di bawah */
+footer {
+  margin-top: auto;
+}
+
+.containerisi img {
+  max-width: 100%; /* Supaya tidak lebih besar dari container */
+  height: auto; /* Menjaga rasio aspek gambar */
+  display: block; /* Menghindari extra space di bawah gambar */
+  margin: auto; /* Agar tetap rata di tengah */
+}
+
 .containerisi {
   width: 100%;
   margin: auto;
   padding: 100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 .accordion {
   background-color: #1c2d16;
   color: white;
-  cursor: pointer; /* Biar kelihatan bisa diklik */
-  padding: 15px;
+  cursor: pointer;
+  padding: 18px 25px; /* Tambah padding agar lebih besar */
+  font-size: 20px; /* Perbesar font */
+  font-weight: 600;
+  text-align: left;
   width: 100%;
   max-width: 800px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  margin: 10px auto;
+  margin: 12px auto;
+  border-radius: 12px; /* Tambah rounded agar lebih modern */
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .accordion:hover {
-  background-color: #334d24;
+  background-color: #2e4d24; /* Warna lebih terang saat hover */
+  transform: scale(1.05); /* Efek membesar saat dihover */
+}
+
+/* Tambahkan panah */
+.accordion::after {
+  content: "\25BC"; /* Panah bawah */
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.accordion.active::after {
+  transform: rotate(180deg); /* Panah ke atas saat aktif */
+}
+
+.panel-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.accordion.active + .panel {
+  max-height: 500px; /* Bisa disesuaikan */
 }
 
 .panel {
   text-align: center;
-  display: none;
-  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
   border: 1px solid #ddd;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 800px;
+  /* background-color: #f9f9f9; */
+  border-radius: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.panel.open {
+  max-height: 1000px; /* cukup besar untuk konten, bisa diubah */
+  padding: 20px;
+}
+/* Ukuran Tablet (768px ke bawah) */
+@media screen and (max-width: 768px) {
+  .containerisi {
+    padding: 50px; /* Kurangi padding agar lebih pas di layar kecil */
+  }
+
+  .accordion {
+    font-size: 16px; /* Perkecil font */
+    padding: 12px 18px; /* Sesuaikan padding */
+    max-width: 90%; /* Gunakan persentase biar fleksibel */
+  }
+
+  .panel-card {
+    padding: 15px; /* Kurangi padding */
+    max-width: 90%;
+  }
+}
+
+/* Ukuran HP (480px ke bawah) */
+@media screen and (max-width: 480px) {
+  .containerisi {
+    padding: 30px;
+    margin-top: 100px;
+  }
+
+  .accordion {
+    font-size: 14px;
+    padding: 10px 15px;
+    max-width: 95%;
+  }
+
+  .panel-card {
+    padding: 10px;
+    max-width: 95%;
+  }
+}
+
+/* Footer tetap di bawah di HP */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }

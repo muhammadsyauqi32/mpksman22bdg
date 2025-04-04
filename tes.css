@@ -1,9 +1,0 @@
-.content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-
-.dropdown.active .content {
-  max-height: 500px; /* sesuaikan */
-}
