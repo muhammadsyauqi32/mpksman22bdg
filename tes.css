@@ -1,36 +1,9 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fdf6c4; /* Warna krem */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
 
-.container {
-  width: 80%;
-  max-width: 500px;
-}
-.accordion {
-  background-color: #1c2d16;
-  color: white;
-  cursor: pointer; /* Biar kelihatan bisa diklik */
-  padding: 15px;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
-.accordion:hover {
-  background-color: #334d24;
-}
-
-.panel {
-  display: none;
-  background-color: white;
-  padding: 10px;
-  border: 1px solid #ddd;
+.dropdown.active .content {
+  max-height: 500px; /* sesuaikan */
 }

@@ -66,3 +66,33 @@ ol li {
   width: 93%;
   margin: 0 auto;
 }
+
+@media (max-width: 1024px) {
+  .row {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  .visi h3,
+  .tugas h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .visi h3,
+  .tugas h3 {
+    text-align: center;
+  }
+  h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+}

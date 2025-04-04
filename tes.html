@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordion Menu</title>
-    <link rel="stylesheet" href="tes.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="accordion">PANCAMITRA</div>
-      <div class="panel">
-        <p>Isi dari PANCAMITRA...</p>
+    <div class="dropdown-container">
+      <div class="dropdown" id="pancamitra">
+        <button onclick="toggleSection('pancamitra')">Pancamitra</button>
+        <div class="content">
+          <p>Isi Pancamitra...</p>
+        </div>
       </div>
 
-      <div class="accordion">KOMISI I</div>
-      <div class="panel">
-        <p>Isi dari KOMISI I...</p>
-      </div>
-
-      <div class="accordion">KOMISI II</div>
-      <div class="panel">
-        <p>Isi dari KOMISI II...</p>
-      </div>
-
-      <div class="accordion">KOMISI III</div>
-      <div class="panel">
-        <p>Isi dari KOMISI III...</p>
+      <div class="dropdown" id="komisi1">
+        <button onclick="toggleSection('komisi1')">Komisi 1</button>
+        <div class="content">
+          <p>Isi Komisi 1...</p>
+        </div>
       </div>
     </div>
 
-    <script></script>
+    <script>
+      function toggleSection(id) {
+        const dropdowns = document.querySelectorAll(".dropdown");
+        dropdowns.forEach((drop) => {
+          if (drop.id === id) {
+            drop.classList.toggle("active");
+          } else {
+            drop.classList.remove("active");
+          }
+        });
+      }
+    </script>
   </body>
 </html>
