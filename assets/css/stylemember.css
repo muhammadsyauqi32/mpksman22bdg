@@ -16,9 +16,10 @@ footer {
 
 .containerisi img {
   max-width: 100%; /* Supaya tidak lebih besar dari container */
-  height: auto; /* Menjaga rasio aspek gambar */
+  height: 100%; /* Menjaga rasio aspek gambar */
   display: block; /* Menghindari extra space di bawah gambar */
   margin: auto; /* Agar tetap rata di tengah */
+  background-color: red;
 }
 
 .containerisi {
@@ -34,14 +35,14 @@ footer {
   background-color: #1c2d16;
   color: white;
   cursor: pointer;
-  padding: 18px 25px; /* Tambah padding agar lebih besar */
-  font-size: 20px; /* Perbesar font */
+  padding: 18px 25px;
+  font-size: 20px;
   font-weight: 600;
   text-align: left;
   width: 100%;
   max-width: 800px;
   margin: 12px auto;
-  border-radius: 12px; /* Tambah rounded agar lebih modern */
+  border-radius: 12px;
   transition: 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
@@ -49,19 +50,19 @@ footer {
 }
 
 .accordion:hover {
-  background-color: #2e4d24; /* Warna lebih terang saat hover */
-  transform: scale(1.05); /* Efek membesar saat dihover */
+  background-color: #2e4d24;
+  transform: scale(1.05);
 }
 
 /* Tambahkan panah */
 .accordion::after {
-  content: "\25BC"; /* Panah bawah */
+  content: "\25BC";
   font-size: 18px;
   transition: transform 0.3s ease;
 }
 
 .accordion.active::after {
-  transform: rotate(180deg); /* Panah ke atas saat aktif */
+  transform: rotate(180deg);
 }
 
 .panel-card {
@@ -96,23 +97,23 @@ footer {
 }
 
 .panel.open {
-  max-height: 1000px; /* cukup besar untuk konten, bisa diubah */
+  max-height: 1000px;
   padding: 20px;
 }
 /* Ukuran Tablet (768px ke bawah) */
 @media screen and (max-width: 768px) {
   .containerisi {
-    padding: 50px; /* Kurangi padding agar lebih pas di layar kecil */
+    padding: 50px;
   }
 
   .accordion {
-    font-size: 16px; /* Perkecil font */
-    padding: 12px 18px; /* Sesuaikan padding */
-    max-width: 90%; /* Gunakan persentase biar fleksibel */
+    font-size: 16px;
+    padding: 12px 18px;
+    max-width: 90%;
   }
 
   .panel-card {
-    padding: 15px; /* Kurangi padding */
+    padding: 15px;
     max-width: 90%;
   }
 }
